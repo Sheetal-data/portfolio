@@ -5,40 +5,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sheetal Dubey - Portfolio</title>
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
         }
+
+        /* Header Styling */
         header {
-            background: #333;
+            background: linear-gradient(to right, #4a90e2, #1455a3);
             color: white;
-            padding: 20px;
+            padding: 50px;
         }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-top: 20px;
+        }
+
+        /* Sections */
         section {
-            padding: 20px;
+            padding: 50px 20px;
         }
-        a {
+
+        /* Projects */
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects li {
+            background: white;
+            margin: 15px auto;
+            padding: 15px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 400px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .projects li:hover {
+            transform: scale(1.05);
+        }
+
+        .projects a {
             text-decoration: none;
-            color: blue;
+            color: #1455a3;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #1455a3;
+            color: white;
+            padding: 40px;
+        }
+
+        .contact a {
+            color: yellow;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
+        <img src="https://via.placeholder.com/150" alt="Sheetal Dubey" class="profile-img">
         <h1>Sheetal Dubey</h1>
         <p>Data Analyst | SQL | Python | Power BI</p>
     </header>
+
+    <!-- About Me -->
     <section>
         <h2>About Me</h2>
-        <p>Detail-oriented data analyst with expertise in SQL, Python, and data visualization.</p>
+        <p>Hello! I'm a data analyst passionate about extracting insights from data using SQL, Python, and visualization tools.</p>
     </section>
-    <section>
+
+    <!-- Projects -->
+    <section class="projects">
         <h2>Projects</h2>
         <ul>
-            <li><a href="#">Project 1</a></li>
-            <li><a href="#">Project 2</a></li>
+            <li><a href="#">📊 Web Traffic Analysis</a></li>
+            <li><a href="#">🔍 Data Scraping for Competitive Insights</a></li>
+            <li><a href="#">📈 Automated Reporting Dashboard</a></li>
         </ul>
     </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>📧 Email: <a href="mailto:sheetaldubey@example.com">sheetaldubey@example.com</a></p>
+        <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/sheetaldubey" target="_blank">linkedin.com/in/sheetaldubey</a></p>
+    </section>
+
 </body>
 </html>
